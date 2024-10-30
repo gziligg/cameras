@@ -1,0 +1,1264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* CSS GERAL */
+/* CSS GERAL */
+/* CSS GERAL */
+/* CSS GERAL */
+/* CSS GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+body{
+    background-color: #ebebeb;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.cont-geral {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+}
+
+.cont-secundario {
+    height: 100vh;
+    width: calc(100vw - 90px);
+    display: flex;
+}
+
+hr.separ {
+    border-top: 1px solid #727272;
+    width: 96%;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* CSS DA BARRA LATERAL DE NAVEGAÇÃO */
+/* CSS DA BARRA LATERAL DE NAVEGAÇÃO */
+/* CSS DA BARRA LATERAL DE NAVEGAÇÃO */
+/* CSS DA BARRA LATERAL DE NAVEGAÇÃO */
+/* CSS DA BARRA LATERAL DE NAVEGAÇÃO */
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: calc(100% + auto);
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 2px 0px 20px #d3d3d3;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+}
+
+nav a {
+    position: relative;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    width: 260px;
+    height: 65px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 10px;
+    transition: all 0.3s ease;
+}
+
+nav i {
+    display: flex;
+    align-items: center;
+}
+
+.fas {
+    width: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+a:hover {
+    background: #56b3ff;
+    color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.selected {
+    background: #2f76b1;
+    color: #f9f9f9;
+}
+
+nav:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+/* CSS DA DASHBOARD */
+/* CSS DA DASHBOARD */
+/* CSS DA DASHBOARD */
+/* CSS DA DASHBOARD */
+/* CSS DA DASHBOARD */
+
+.info-geral {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infoscamon {
+    background-color: #2f76b1;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.infosradon {
+    background-color: #2f76b1;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.infoscamoff {
+    background-color: #b12f2f;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.infosradoff {
+    background-color: #b12f2f;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.allcams-dash {
+    height: 100%;
+    width: 47%;
+    background-color: #77b32a;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.allradios-dash {
+    height: 100%;
+    width: 47%;
+    background-color: #77b32a;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.dashgeral-cam-user-radio {
+    width: 100%;
+    height: calc(100% - 230px);
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.allcams-sep1 {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 5px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.allradios-sep1 {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.infoscam {
+    width: 100%;
+    height: 75%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.infosradio {
+    width: 100%;
+    height: 75%;
+    background-color: #f9f9f9;
+    display: flex;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.infoscam-off {
+    width: 100%;
+    height: 75%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.infosradio-off {
+    width: 100%;
+    height: 75%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 10px 0px 10px;
+}
+
+hr.solid {
+    border-top: 1px solid #dfdfdf;
+    width: 95%;
+}
+
+.sepcam-1, .sepcam-2 {
+    width: 100%;
+}
+
+.sepcam-1 {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sepcam-1 p {
+    color: #2f76b1;
+    font-size: 20px;
+}
+
+.sepcam-2 {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.infoscamon .fas {
+    height: 25%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infosradon .fas {
+    height: 25%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoscamoff .fas {
+    height: 25%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infosradoff .fas {
+    height: 25%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos-sep-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    padding: 20px;
+    color: #f9f9f9;
+}
+
+.difdashgraficos-sep-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+    padding: 20px;
+    color: #f9f9f9;
+}
+
+.difdash-sep-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    padding: 20px;
+    color: #f9f9f9;
+}
+
+
+/* CSS DA TELA PRINCIPAL */
+/* CSS DA TELA PRINCIPAL */
+/* CSS DA TELA PRINCIPAL */
+/* CSS DA TELA PRINCIPAL */
+/* CSS DA TELA PRINCIPAL */
+
+.config-principal {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.configsep-1 {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.configsep-1 h2{
+    color: #333;
+}
+
+.configsep-1 h4 {
+    color: #777;
+}
+
+.configsep-2 {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.cont-secundario-pricipal {
+    height: 100vh;
+    width: calc(100vw - 90px);
+    overflow-y: scroll;
+}
+
+.telaprincipal {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.telaprincipal-2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.emps {
+    background-color: #2f76b1;
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.empsview {
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+    color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.emp-cams {
+    background-color: #2f76b1;
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.camsinform {
+    background-color: #77b32a;
+    height: 100%;
+    width: 47%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.imginform {
+    background-color: #e9d418;
+    height: auto;
+    width: 47%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.subemps {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 85%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.subemp-cams {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 85%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.sub-camsinform {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 75%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.sub-imginform {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 75%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    padding: 5px;
+}
+
+.empview {
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+    color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+}
+
+.empview h4, .empview p {
+    width: fit-content;
+}
+
+.camsview {
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+    color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.camsview h4, .camsview p {
+    width: fit-content;
+}
+
+.camsconfig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camsconfig .fas {
+    width: auto;
+}
+
+.camsconfig i {
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+.sub-imginform img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 10px;
+}
+
+/* CSS DO DROPDOWN */
+/* CSS DO DROPDOWN */
+/* CSS DO DROPDOWN */
+/* CSS DO DROPDOWN */
+/* CSS DO DROPDOWN */
+
+.dropdown {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f76b1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.dropdown-content a {
+    color: #f9f9f9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #56b3ff;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #2f76b1;
+    color: #f9f9f9;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+
+.dropbtn2 {
+    background-color: #2f76b1;
+    color: #f9f9f9;
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffff00;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+.dropbtn2:hover {
+    background-color: #b12f2f;
+}
+
+.dropbtn .fas {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropbtn2 .fas {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropbtn2 span {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS DO RADIO */
+/* CSS DO RADIO */
+/* CSS DO RADIO */
+/* CSS DO RADIO */
+/* CSS DO RADIO */
+
+.cont-secundario-radio {
+    height: 100vh;
+    width: calc(100vw - 90px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.sepp-radios {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px 10px 20px 10px;
+    gap: 3%;
+}
+
+.emp-radios {
+    background-color: #2f76b1;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.rads {
+    background-color: #2f76b1;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.radsinform {
+    background-color: #77b32a;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.subradios-emp {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 87%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.sub-rads {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 87%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.subradsinform {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 87%;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.cont-secundario-radio .infos-sep-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13%;
+    padding: 20px;
+    color: #f9f9f9;
+}
+
+.radiosconfig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radiosconfig .fas {
+    width: auto;
+}
+
+.radiosconfig i {
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+.radiosconfig a {
+    border-radius: 10px;
+}
+
+.informrads {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* CSS DO MODAL */
+/* CSS DO MODAL */
+/* CSS DO MODAL */
+/* CSS DO MODAL */
+/* CSS DO MODAL */
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS DO USUÁRIO */
+/* CSS DO USUÁRIO */
+/* CSS DO USUÁRIO */
+/* CSS DO USUÁRIO */
+/* CSS DO USUÁRIO */
+
+.users-geral {
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.users {
+    background-color: #2f76b1;
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.editusers {
+    background-color: #e9d418;
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.subusers {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 80%;
+    box-shadow:  1px 1px 15px #b1b1b1;
+    border-radius: 0px 10px 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subeditusers {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 80%;
+    box-shadow:  1px 1px 15px #b1b1b1;
+    border-radius: 0px 10px 10px 10px;
+    padding: 10px;
+}
+
+.users-sep-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    padding: 20px;
+    color: #f9f9f9;
+}
+
+.userview {
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+    color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optusers {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.optusers p{
+    font-size: 13px;
+}
+
+.editbtnuser .fas{
+    width: fit-content;
+    margin: 10px;
+}
+
+.trashbtnuser .fas{
+    width: fit-content;
+    margin: 10px;
+}
+
+/* CSS DO LOGIN */
+/* CSS DO LOGIN */
+/* CSS DO LOGIN */
+/* CSS DO LOGIN */
+/* CSS DO LOGIN */
+
+
+
+/* CSS DOS GRÁFICOS */
+/* CSS DOS GRÁFICOS */
+/* CSS DOS GRÁFICOS */
+/* CSS DOS GRÁFICOS */
+/* CSS DOS GRÁFICOS */
+
+
+.menu {
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #dddddd;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: #dddddd;
+}
+
+.logo {
+    display: none;
+}
+
+#picture__input {
+    display: none;
+}
+  
+.picture {
+    width: 200px;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+}
+  
+.picture:hover {
+    color: #777;
+    background: #ccc;
+}
+  
+.picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+}
+  
+.picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+.picture__img {
+    max-width: 100%;
+}
+
+.cont-secundario-dash {
+    height: auto;
+    width: calc(100vw - 90px);
+    overflow-y: scroll;
+}
+
+.graficos-cont {
+    width: 100%;
+    height: 70vh;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.sepuser {
+    background-color: #77b32a;
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+
+}
+
+.subsepuser {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 85%;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.sepgrafico {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.graficocam {
+    background-color: #2f76b1;
+    height: 48%;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.graficoradio {
+    background-color: #2f76b1;
+    height: 48%;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow:  1px 1px 15px #b1b1b1;
+}
+
+.vwgraficocam {
+    background-color: #f9f9f9;
+    height: 70%;
+    width: 100%;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.vwgraficoradio {
+    background-color: #f9f9f9;
+    height: 70%;
+    width: 100%;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.cameras-dash-info {
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+    color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+}
+
+@media (max-width:785px) {
+
+    body {
+        max-height: none;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: block;
+        color: #dddddd;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .dife {
+        display: none;
+    }
+
+    nav {
+        height: 70px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    nav:hover {
+        width: 100%;
+        height: 70px;
+    }
+
+    .cont-secundario {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .cont-secundario::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .cont-info-emp {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .cont-cameras {
+        width: 100%;
+    }
+
+    .cont-geral {
+        height: auto;
+        justify-content: center;
+    }
+
+    .cont-secundario {
+        height: auto;
+        width: 100vw;
+    }
+
+    .emp-config input {
+        width: 100%;
+    }
+
+    .emp-config .adicionar {
+        height: 30px;
+        width: 30px;
+    }
+
+    .cam-config input {
+        width: 100%;
+    }
+
+    .cam-config .adicionar {
+        height: 30px;
+        width: 30px;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: auto;
+    }
+
+    .sep1, .sep2 {
+        width: auto;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: #333;
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+        list-style-type: none;
+    }
+
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .inputs-add-cam {
+        flex-direction: column;
+    }
+
+    .inputs-add-cam .sep-cam-1 {
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .inputs-add-cam .sep-cam-2 {
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+
+    }
+
+    .info-camera {
+        flex-direction: column;
+    }
+
+    .sub-cont-info {
+        height: auto;
+    }
+
+    #imagemCamera {
+        width: 100%;
+    } 
+
+    .info-cams-dif-2 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .info-cams-dif-1 {
+        margin-bottom: 10px;
+    }
+}
